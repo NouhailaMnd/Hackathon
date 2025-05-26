@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './layout/Sidebar';
+import AdminDashboard from './layout/AdminDashboard';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Sidebar" element={<Sidebar />} />
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
         {/* Tu peux ajouter d'autres routes ici */}
       </Routes>
     </Router>

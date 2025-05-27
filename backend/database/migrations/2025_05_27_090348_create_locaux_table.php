@@ -24,7 +24,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('image')->nullable();
             $table->string('contact_responsable')->nullable();
-            $table->string('horaires_ouverture')->default('08:00-22:00');
+            $table->json('horaires_ouverture')->nullable();
             $table->decimal('surface', 8, 2)->nullable(); // en m²
             $table->timestamps();
             
